@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Mono", monospace, ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "Space Mono", ui-monospace, monospace;
+}
+
+/* Precise custom styling overrides for clean visual scrolling and slider accent items */
+input[type="range"]::-webkit-slider-thumb {
+  box-shadow: 0 0 10px rgba(34, 211, 238, 0.8);
+  border: 2px solid #22d3ee;
+  background-color: #020617;
+}
+input[type="range"]::-moz-range-thumb {
+  box-shadow: 0 0 10px rgba(34, 211, 238, 0.8);
+  border: 2px solid #22d3ee;
+  background-color: #020617;
+}
+
+/* Geometric Balance Custom Classes */
+.grid-bg {
+  background-image: linear-gradient(to right, rgba(34, 211, 238, 0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(34, 211, 238, 0.05) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+.hologram-panel {
+  background: rgba(8, 47, 73, 0.4);
+  border: 1px solid rgba(34, 211, 238, 0.3);
+  backdrop-filter: blur(4px);
+  box-shadow: 0 0 15px rgba(34, 211, 238, 0.1);
+}
+
+.glow-text {
+  text-shadow: 0 0 8px rgba(34, 211, 238, 0.8);
+}
+
+/* Pulsing star animation keys */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+

@@ -1,0 +1,6 @@
+{
+  "name": "Gravity Slingshot",
+  "description": "Navigate a space probe using orbital mechanics. Adjust launch angle and thrust, harness the gravitational pull of celestial bodies, avoid asteroid fields and black holes, and reach the destination across multiple progressive neon levels.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
